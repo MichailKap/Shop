@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+
+@import './mixins.scss';
+@import 'swiper/swiper.scss';
+
+
+* {
+  border: none;
+  outline: none;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: #292929;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+
+  list-style: none;
+  @include _768 {
+    font-size: 16px;
+  }
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  @include _768 {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 15px;
+  @include _768 {
+    font-size: 24px;
+  }
+}
+
+.text {
+  color: $gray;
+  font-size: 14px;
+  line-height: 22px;
+  @include _768 {
+    font-size: 16px;
+  }
+}
+
+.solid-button {
+  background-color: $green;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 25px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $dark_green;
+  }
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: 1px solid $green;
+  color: $green;
+  cursor: pointer;
+  padding: 12px 25px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $green;
+    color: #fff;
+  }
+}
