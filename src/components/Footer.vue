@@ -34,18 +34,18 @@
             <p class="footer__address">г. Москва, ул. Ленина</p>
             <p class="footer__mail">reakt11@mail.ru</p>
             <div class="footer__social-networks">
-              <i class="icon fab fa-vk"></i>
-              <i class="icon fab fa-twitter"></i>
-              <i class="icon fab fa-facebook-f"></i>
+              <i class="icon fa fa-vk" aria-hidden="true"></i>
+              <i class="icon fa fa-facebook" aria-hidden="true"></i>
+              <i class="icon fa fa-twitter" aria-hidden="true"></i>
             </div>
           </div>        
         </div>
         <div class="footer__line"></div>
         <div class="footer__bottom-row">
           <div class="footer__cards">
-            <i class="icon fab fa-cc-visa"></i>
-            <i class="icon fab fa-cc-paypal"></i>
-            <i class="icon fab fa-cc-mastercard"></i>
+            <i class="icon fa fa-cc-visa" aria-hidden="true"></i>
+            <i class="icon fa fa-cc-paypal" aria-hidden="true"></i>
+            <i class="icon fa fa-cc-mastercard" aria-hidden="true"></i>
           </div>
           <p class="footer__copyright">© Оформление сайта</p>
         </div>
@@ -194,7 +194,7 @@ export default {
     .icon {
       color: #94cc9d;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 20px;
       margin: 30px 15px 30px 0;
       transition: $transition;
       @include _768 {

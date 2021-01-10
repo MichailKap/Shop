@@ -18,7 +18,7 @@
         </div>
         <div class="item__quantity">
           <i
-            class="item__decrement-button fas fa-minus"
+            class="item__decrement-button fa fa-minus"
             @click="decrementItem"
           ></i>
           <p class="item__number">
@@ -28,13 +28,13 @@
             <span v-if='pc'>шт</span>
           </p>
           <i
-            class="item__increment-button fas fa-plus"
+            class="item__increment-button fa fa-plus"
             @click="incrementItem"
           ></i>
         </div>
       </div>
       <i
-        class="item__delete fas fa-times"
+        class="item__delete fa fa-times"
         @click="deleteFromCart"
       ></i>
     </div>
@@ -159,8 +159,8 @@ export default {
     cursor: pointer;
     background-color: #f5f5f5;
     border-radius: 50%;
-    font-size: 11px;
-    padding: 8px;
+    font-size: 14px;
+    padding: 6px 11px;
     transition: color .2s linear,
                 background-color .2s linear;
     &:hover {
@@ -174,7 +174,7 @@ export default {
   &__delete {
     color: $gray;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     transition: color .2s linear;
     @include _768 {
       font-size: 22px;

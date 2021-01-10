@@ -18,12 +18,14 @@
             </transition>
           </router-link>
           <i
-            class="top-row__menu-icon fas fa-bars"
+            class="top-row__menu-icon fa fa-bars"
+            aria-hidden="true"
             @click="changeVisibleMenu()"
             v-if="openMenu"
           ></i>
           <i 
-            class="top-row__active-menu-icon fas fa-times"
+            class="top-row__active-menu-icon fa fa-times"
+            aria-hidden="true"
             @click="changeVisibleMenu()"
             v-if="closeMenu"
           ></i>
@@ -40,7 +42,7 @@
                 to="/catalog"
               >
                 Каталог товаров
-                <i class="icon fas fa-angle-down"></i>
+                <i class="icon fa fa-angle-down" aria-hidden="true"></i>
                 <ul :class="{'show_submenu' : showSubmenu}" class="bottom-row__submenu">
                   <li
                     v-for="submenuLink in submenuLinks"
@@ -57,7 +59,8 @@
                 @click="changeVisibleSubmenu()"
               >
                 <i
-                  class="icon fas fa-angle-down"
+                  class="icon fa fa-angle-down"
+                  aria-hidden="true"
                   :class="{'active_submenu-icon' : showSubmenu}"
                 ></i>
               </div>
@@ -378,8 +381,8 @@ export default {
         }
         .icon {
           color: $green;
+          font-size: 18px;
           margin-left: 7px;
-          padding-top: 4px;
           transition: transform .5s linear;
           @include _979 {
             display: none;
